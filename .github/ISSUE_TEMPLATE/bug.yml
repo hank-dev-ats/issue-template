@@ -13,7 +13,7 @@ body:
     id: enviorment
     attributes:
       label: Enviorment
-      description: 실행 환경을 선택해주세요.
+      description: 실행 환경을 선택해주세요. (다중 선택 가능)
       multiple: true
       options:
         - iOS
