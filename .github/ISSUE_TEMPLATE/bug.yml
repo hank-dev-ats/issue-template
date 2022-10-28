@@ -1,4 +1,4 @@
-name: Bug report
+name: Bug
 description: 버그, 오류 등 비정상적인 동작에 대한 이슈
 title: "[BUG]: "
 labels: ["bug"]
