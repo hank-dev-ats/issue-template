@@ -9,13 +9,6 @@ body:
     attributes:
       value: |
         상세한 요구사항은 데이터를 추출 및 운영하는데 도움이 됩니다. :innocent:
-  - type: checkboxes
-    id: privacy
-    attributes:
-      label: Privacy
-      description: 개인정보가 포함된 데이터 추출은 체크하고, 개인정보 label을 추가해주세요.
-      options:
-        - label: 개인정보가 포함되어 있습니다. 목적 완료 후 개인정보를 파기합니다.
   - type: dropdown
     id: privacy
     attributes:
