@@ -31,11 +31,27 @@ body:
       placeholder: ex. v.1.0.0
     validations:
       required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: 버그가 발생한 날짜, 시간을 알려주세요.
+      placeholder: ex. 2022-11-01 화요일 오후 2시 30분경
+    validations:
+      required: false
+  - type: input
+    id: account
+    attributes:
+      label: Account Infomation
+      description: 버그가 발생한 계정 정보를 알려주세요.
+      placeholder: ex. hank@artinus.dev or 010-1234-5678 or 접속정보 불필요 or -
+    validations:
+      required: false
   - type: textarea
     id: what-happened
     attributes:
-      label: 버그 내용
-      description: 접속 계정, 접속 시간, 고객 정보, 스크린샷 등 최대한 상세하게 작성해주세요.
+      label: Content
+      description: 최대한 상세하게 작성해주세요. 스크린샷이 있으면 더 좋습니다.
       placeholder: 최대한 상세하게 작성해주세요.
     validations:
       required: true
