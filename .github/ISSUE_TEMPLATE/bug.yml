@@ -37,6 +37,5 @@ body:
       label: 버그 내용
       description: 접속 계정, 접속 시간, 고객 정보, 스크린샷 등 최대한 상세하게 작성해주세요.
       placeholder: 최대한 상세하게 작성해주세요.
-      value: ""
     validations:
       required: true
