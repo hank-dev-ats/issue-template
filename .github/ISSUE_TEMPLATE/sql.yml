@@ -16,6 +16,16 @@ body:
       description: 개인정보가 포함된 데이터 추출은 체크하고, 개인정보 label을 추가해주세요.
       options:
         - label: 개인정보가 포함되어 있습니다. 목적 완료 후 개인정보를 파기합니다.
+  - type: dropdown
+    id: privacy
+    attributes:
+      label: 개인정보
+      description: 개인정보 포함 여부를 선택하고, 개인정보 label을 추가해주세요. 목적 완료 후 개인정보를 반드시 파기해야 합니다.
+      options:
+        - 포함
+        - 미포함
+    validations:
+      required: true
   - type: input
     id: objective
     attributes:
