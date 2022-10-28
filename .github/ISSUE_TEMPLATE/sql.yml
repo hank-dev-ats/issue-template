@@ -8,42 +8,44 @@ body:
   - type: markdown
     attributes:
       value: |
-        상세한 요구사항은 데이터를 추출 및 운영하는데 도움이 됩니다. :innocent:
+        상세한 요구사항은 데이터를 추출 및 운영에 도움이 됩니다. :innocent:
   - type: dropdown
     id: privacy
     attributes:
-      label: 개인정보
-      description: 개인정보 포함 여부를 선택하고, 개인정보 label을 추가해주세요. 목적 완료 후 개인정보를 반드시 파기해야 합니다.
+      label: Privacy
+      description: 개인정보 포함 여부를 선택하고, 개인정보 label을 추가해 주세요. 
       options:
-        - 포함
+        - 포함 - 목적 완료 후 개인정보를 반드시 파기합니다.
         - 미포함
     validations:
       required: true
   - type: input
-    id: objective
+    id: purpose
     attributes:
-      label: 목적
+      label: Purpose
+      description: 간략한 목적을 입력해 주세요.
       placeholder: ex. 첫번째 작품 이벤트 대상자 추첨을 위함
     validations:
       required: true
   - type: input
     id: range
     attributes:
-      label: 기간
+      label: Date
+      description: 기간을 자유로운 형식으로 입력해 주세요.
       placeholder: ex. 2022-10-01 ~ 2022-10-07
   - type: textarea
     id: what-happened
     attributes:
       label: Content
-      description: 데이터 기준을 명확하게 작성해주세요. 
-      placeholder: 최대한 상세하게 작성해주세요.
+      description: 데이터 기준을 명확하게 작성해 주세요. 
+      placeholder: 최대한 상세하게 작성해 주세요.
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
       label: Expected outcomes
-      description: 예상하는 데이터 결과에 대해 작성해주세요.
+      description: 예상하는 데이터 결과에 대해 작성해 주세요.
       render: shell
     validations:
       required: true
