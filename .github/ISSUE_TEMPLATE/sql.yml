@@ -45,7 +45,7 @@ body:
     id: expected
     attributes:
       label: Expected outcomes
-      description: 예상하는 데이터 결과에 대해 작성해 주세요.
+      description: 예상하는 데이터 결과를 알려주세요.
       render: shell
     validations:
       required: true
