@@ -1,0 +1,42 @@
+name: Bug report
+description: 버그, 오류 등 비정상적인 동작에 대한 이슈
+title: "[BUG]: "
+labels: ["bug"]
+assignees:
+  - 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        자세한 설명은 버그를 잡는데 도움이 됩니다. :innocent:
+  - type: dropdown
+    id: enviorment
+    attributes:
+      label: Enviorment
+      description: 실행 환경을 선택해주세요.
+      multiple: true
+      options:
+        - iOS
+        - Android
+        - Chrome
+        - Safari
+        - Etc
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: 버전 정보를 입력해주세요.
+      placeholder: ex. v.1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 버그 내용
+      description: 접속 계정, 접속 시간, 고객 정보, 스크린샷 등 최대한 상세하게 작성해주세요.
+      placeholder: 최대한 상세하게 작성해주세요.
+      value: ""
+    validations:
+      required: true
