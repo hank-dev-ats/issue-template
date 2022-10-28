@@ -1,0 +1,66 @@
+name: SQL
+description: 데이터 추출 및 운영 관련 이슈
+title: "[SQL]: "
+labels: ["SQL"]
+assignees:
+  - 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        상세한 요구사항은 데이터를 추출 및 운영하는데 도움이 됩니다. :innocent:
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      description: 개인정보가 포함된 데이터 추출은 체크하고, 개인정보 label 을 추가해주세요.
+      options:
+        - label: 개인정보가 포함되어 있습니다. 목적 완료 후 개인정보는 파기합니다.
+      options:
+        - label: 개인정보가 포함되어 있지 않습니다.
+  - type: dropdown
+    id: enviorment
+    attributes:
+      label: Enviorment
+      description: 실행 환경을 선택해주세요. (다중 선택 가능)
+      multiple: true
+      options:
+        - iOS
+        - Android
+        - Chrome
+        - Safari
+        - Etc
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: 버전 정보를 입력해주세요.
+      placeholder: ex. v.1.0.0
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: 버그가 발생한 날짜, 시간을 알려주세요.
+      placeholder: ex. 2022-11-01 화요일 오후 2시 30분경
+    validations:
+      required: false
+  - type: input
+    id: account
+    attributes:
+      label: Account Infomation
+      description: 버그가 발생한 계정 정보를 알려주세요.
+      placeholder: ex. hank@artinus.dev or 010-1234-5678 or 접속정보 불필요 or -
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Content
+      description: 최대한 상세하게 작성해주세요. 스크린샷이 있으면 더 좋습니다.
+      placeholder: 최대한 상세하게 작성해주세요.
+    validations:
+      required: true
