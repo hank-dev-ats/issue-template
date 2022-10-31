@@ -19,6 +19,7 @@ body:
         3. assignee : 비밀번호 slack 또는 개별 전달.
         4. issuer : 업무 목적 완료 후 완전 파기하고 추가 comment 작성.
         5. assignee : 첨부 파일 삭제 후 이슈 close  
+        #
         
   - type: dropdown
     id: privacy
