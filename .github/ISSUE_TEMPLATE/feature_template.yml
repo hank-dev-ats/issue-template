@@ -32,13 +32,13 @@ body:
     validations:
       required: true
   - type: textarea
-      id: expected
+      id: expected2
       attributes:
         label: Expected results
         description: 예상하는 결과를 알려주세요.
         render: shell
   - type: textarea
-      id: references
+      id: references2
       attributes:
         label: References
         description: 참고할 수 있는 이슈, PR, 링크를 알려주세요.
