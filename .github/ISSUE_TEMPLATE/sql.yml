@@ -8,12 +8,19 @@ body:
   - type: markdown
     attributes:
       value: |
-        상세한 요구사항은 데이터를 추출 및 운영에 도움이 됩니다. :innocent:
+        - 프로젝트를 선택하고, DueDate, Priority 를 설정해주세요.
+        - 이슈에 해당하는 라벨링을 해주세요.
+        - 상세한 요구사항은 데이터를 추출 및 운영에 도움이 됩니다. :innocent:
+        - 개인정보 관련
+            1. 데이터 추출 및 암호화하여 comment 첨부.
+            2. 비밀번호 slack 또는 개별 전달.
+            3. 업무 목적 완료 후 완전 파기하고 추가 comment 작성.
+            4. 첨부 파일 삭제 후 이슈 close
   - type: dropdown
     id: privacy
     attributes:
       label: Privacy
-      description: 개인정보 포함 여부를 선택하고, 개인정보 label을 추가해 주세요. 
+      description: 개인정보 포함 여부를 선택하세요.
       options:
         - 포함 - 목적 완료 후 개인정보를 반드시 파기합니다.
         - 미포함
@@ -36,7 +43,7 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: Content
+      label: Description
       description: 데이터 기준을 명확하게 작성해 주세요. 
       placeholder: 최대한 상세하게 작성해 주세요.
     validations:
@@ -44,7 +51,7 @@ body:
   - type: textarea
     id: expected
     attributes:
-      label: Expected outcomes
+      label: Expected results
       description: 예상하는 데이터 결과를 알려주세요.
       render: shell
     validations:
