@@ -1,0 +1,33 @@
+name: Feature
+description: 신규 개발, 기능 수정, 성능 개선 등 개발 관련 이슈
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees:
+  - 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        - 프로젝트를 선택하고, DueDate, Priority 를 설정해주세요.
+        - 이슈에 해당하는 라벨링을 해주세요.
+        - 자세한 설명은 개발팀에 큰 도움이 됩니다. :innocent:
+  - type: dropdown
+    id: feat
+    attributes:
+      label: Feature Type
+      multiple: true
+      options:
+        - 기능 수정
+        - 성능 개선
+        - 신규 개발
+        - 아키텍처
+        - 기타
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Description
+      description: 기획 내용, 관련 이슈, 링크, 스크린샷이 있으면 더 좋습니다.
+    validations:
+      required: true
