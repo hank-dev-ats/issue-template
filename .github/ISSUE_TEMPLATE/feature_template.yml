@@ -29,8 +29,7 @@ body:
     attributes:
       label: Description
       description: 기획 내용, 순서도, 스크린샷 등이 있으면 더 좋습니다.
-      value: |
-        "\n\n\n\n\n### Reference\n#"
+      value: "\n\n\n\n\n### Reference\n#"
     validations:
       required: true
   - type: textarea
