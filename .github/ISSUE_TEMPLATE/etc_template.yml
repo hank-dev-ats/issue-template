@@ -1,5 +1,5 @@
-name: management
-description: 상품, 푸시, 공지사항 등 운영 관련 업무
+name: Etc
+description: 기타 관련 업무
 title: "[기타]: "
 labels: ["ETC"]
 assignees:
