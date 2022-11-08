@@ -1,4 +1,4 @@
-name: Feature
+name: 1. Feature
 description: 신규 개발, 기능 수정, 성능 개선 등 개발 관련 이슈
 title: "[Feature]: "
 labels: ["enhancement"]
