@@ -3,7 +3,7 @@ description:
 title: "[INFRA]: "
 labels: ["infra"]
 assignees:
-  - hank-dev-ats
+  - "hank-dev-ats"
 body:
   - type: markdown
     attributes:
