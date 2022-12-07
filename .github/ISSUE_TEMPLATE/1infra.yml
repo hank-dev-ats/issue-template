@@ -1,5 +1,5 @@
 name: Infra
-description: 
+description: 인프라 환경에 대한 이슈
 title: "[INFRA]: "
 labels: ["infra"]
 assignees:
@@ -10,11 +10,10 @@ body:
       value: |
         ###  :heavy_check_mark: 안내
         - 프로젝트를 선택하고, DueDate, Priority 를 설정해주세요.
-
   - type: input
     id: envoriment
     attributes:
-      label: envoriment
+      label: Envoriment
       description: 인프라 환경을 적어주세요.
       placeholder: ex. AWS, DB, Github actions 등
     validations:
@@ -22,8 +21,8 @@ body:
   - type: input
     id: why
     attributes:
-      label: Purpose
-      description: 요청 이유를 적어주세요.
+      label: Details
+      description: 이슈 내용을 적어주세요.
       placeholder: 운영성 업무를 위한 XX 테이블 update 권한 요청
     validations:
       required: false
