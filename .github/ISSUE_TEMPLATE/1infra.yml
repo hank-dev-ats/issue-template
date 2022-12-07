@@ -18,7 +18,7 @@ body:
       placeholder: ex. AWS, DB, Github actions 등
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: why
     attributes:
       label: Details
